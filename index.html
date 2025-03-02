@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crystal Luxe Homes</title>
+</head>
+<body>
+    <header>
+        <h1>Crystal Luxe Homes</h1>
+        <p>Your dream home awaits</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="house-listing">
+            <a href="house1.html">
+                <img src="images/house1.jpg" alt="House 1">
+                <div class="house-details">
+                    <h2>Beautiful Family Home</h2>
+                    <p>Price: $500,000</p>
+                    <p>Location: 123 Main St, Springfield</p>
+                    <div id="map1" class="map"></div>
+                </div>
+            </a>
+        </div>
+        <div class="house-listing">
+            <a href="house2.html">
+                <img src="images/house2.jpg" alt="House 2">
+                <div class="house-details">
+                    <h2>Modern Apartment</h2>
+                    <p>Price: $350,000</p>
+                    <p>Location: 456 Elm St, Springfield</p>
+                    <div id="map2" class="map"></div>
+                </div>
+            </a>
+        </div>
+        <div class="house-listing">
+            <a href="house3.html">
+                <img src="images/house3.jpg" alt="House 3">
+                <div class="house-details">
+                    <h2>Luxury Villa</h2>
+                    <p>Price: $1,200,000</p>
+                    <p>Location: 789 Oak St, Springfield</p>
+                    <div id="map3" class="map"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script>
+        function initMap() {
+            var map1 = new google.maps.Map(document.getElementById('map1'), {
+                center: {lat: 37.7749, lng: -122.4194},
+                zoom: 12
+            });
+            var map2 = new google.maps.Map(document.getElementById('map2'), {
+                center: {lat: 37.7749, lng: -122.4194},
+                zoom: 12
+            });
+            var map3 = new google.maps.Map(document.getElementById('map3'), {
+                center: {lat: 37.7749, lng: -122.4194},
+                zoom: 12
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

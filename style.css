@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #333; /* Darker header background */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #444; /* Darker nav background */
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 500px; /* Reduced the max-width */
+    margin: 0 auto;
+    padding: 1rem; /* Added padding for better spacing */
+}
+
+.house-listing {
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 5px; /* Added border-radius for rounded corners */
+    overflow: hidden; /* Ensures content stays within the border */
+    background-color: #fff; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter box-shadow */
+}
+
+.house-listing img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ensures image does not exceed container width */
+    height: auto;
+}
+
+.house-details {
+    text-align: center;
+    padding: 1rem; /* Added padding for better spacing */
+}
+
+.house-details h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Adjusted font size */
+    color: #333; /* Dark text color */
+}
+
+.house-details p {
+    margin: 0.5rem 0;
+    font-size: 1rem; /* Adjusted font size */
+    color: #666; /* Medium text color */
+}
+
+.map {
+    width: 100%;
+    height: 200px; /* Reduced height */
+    border-radius: 5px;
+    margin-top: 1rem; /* Added margin-top for spacing */
+}
+
+.contact {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff; /* Light background color */
+    border-top: 1px solid #ddd; /* Lighter border */
+    margin-top: 2rem;
+}
